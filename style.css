@@ -26,6 +26,11 @@ header, main {
     margin-right:3%;
 }
 
+.marginTitleAccomodations {
+    margin-top: 5%;
+    margin-right:3%;
+}
+
 
 /*** Flexbox ***/
 
@@ -67,12 +72,6 @@ header, main {
     justify-content: space-between;
 }
 
-.flexColumnSpaceBetween {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 
 /*** COLORS ***/
 
@@ -93,6 +92,10 @@ header, main {
     color: black;
 }
 
+.colorLink {
+    color:black
+}
+
 .backgroundBlue {
     background-color: #0065FC;
 }
@@ -102,6 +105,10 @@ header, main {
 }
 
 .backgroundGrey {
+    background-color: #F2F2F2;
+}
+
+.backgroundAccomodations {
     background-color: #F2F2F2;
 }
 
@@ -130,25 +137,42 @@ header, main {
 /*** NAV ***/
 
 
-.sizeNav {
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navHeight {
     height: 130px;
 }
 
-.sizeLiens {
+.linksContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
 }
 
-.sizeLien {
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
     height: 150px;
 }
 
-.bordureNav {
-    border-top: 5px solid #0065FC;
+.borderNav {
+    border-top: 5px solid transparent;
 }
 
-.bordureNavAjustement {
-    border-top: 5px solid transparent;
+.borderNav:hover {
+    border-top: 5px solid #0065FC;
+    cursor: pointer;
+}
+
+.borderNav:hover > .colorLink {
+    color: #0065FC;
 }
 
 
@@ -187,6 +211,13 @@ header, main {
     border-radius: 0 10px 10px 0;
 }
 
+#searchLogo {
+    display: none;
+}
+
+.buttonSearch:hover {
+    background-color: #0257d6;
+}
 
 /*** FILTERS ***/
 
@@ -229,8 +260,8 @@ header, main {
 }
 
 .filterCategories:hover > .filterIcons {
-    color: white;
-    background-color: #5498fd; 
+    background-color: #5498fd;
+    color: rgb(255, 255, 255);
 }
 
 .filterCategories:hover > .filterText {
@@ -241,6 +272,7 @@ header, main {
     display: flex;
     align-items: center;
     padding-bottom: 1%;
+    margin-left: 5px;
 }
 
 .circle {
@@ -254,6 +286,12 @@ header, main {
 
 /*** Accomodations ***/
 
+
+.accomodations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .sizeAccommodationsArea {
     flex: 2;
@@ -270,10 +308,16 @@ header, main {
 
 .containerAccomodations-1 {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .containerAccomodations-2 {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .accomodationCard {
@@ -288,55 +332,13 @@ header, main {
     width: 90%;
 }
 
-.pictureAubergeLaCannebiere {
-    background-image: url("img/hebergements/4_small/auberge-la-cannebiere.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
+.descriptionAccomodationsTitle {
+    margin-top: 10px;
+    margin-bottom: -15px;
 }
 
-.pictureHotelDuPort {
-    background-image: url("img/hebergements/4_small/hotel-du-port.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-
-.pictureHotelLesMouettes {
-    background-image: url("img/hebergements/4_small/hotel-les-mouettes.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-
-.pictureAubergeDeLaMer {
-    background-image: url("img/hebergements/4_small/auberge-de-la-mer.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-
-.pictureAuberegeLePanier {
-    background-image: url("img/hebergements/4_small/auberge-le-panier.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-
-.pictureHotelChezAmina {
-    background-image: url("img/hebergements/4_small/hotel-chez-amina.jpg");
-    background-size: cover;
-    background-position: center;
+.pictureAccomodations {
+    object-fit: cover;
     width: 100%;
     height: 120px;
     border-radius: 15px 15px 0 0;
@@ -360,8 +362,7 @@ header, main {
 
 .popularAccomodationCard {
     background-color: white;
-    height: auto;
-    padding: 1% 0 1% 1%;
+    padding: 1.5% 0 1.5% 1.5%;
     border-radius: 20px;
 }
 
@@ -370,32 +371,14 @@ header, main {
 }
 
 .descriptionPopularAccomodation {
+    height: 150px;
     width: 60%;
     padding-left: 5%;
+    padding-bottom: 5px;
 }
 
-.pictureHotelLeSoleilDuMatin {
-    background-image: url("img/hebergements/4_small/hotel-le-soleil-du-matin.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 35%;
-    height: 160px;
-    border-radius: 15px 0 0 15px;
-}
-
-.pictureAuCoeurDeLeauChambreDhotes {
-    background-image: url("img/hebergements/4_small/au-coeur-de-l-eau-chambres-d-hotes.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 35%;
-    height: 160px;
-    border-radius: 15px 0 0 15px;
-}
-
-.pictureHotelToutBleuEtBlanc {
-    background-image: url("img/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg");
-    background-size: cover;
-    background-position: center;
+.picturePopularAccomodations {
+    object-fit: cover;
     width: 35%;
     height: 160px;
     border-radius: 15px 0 0 15px;
@@ -423,11 +406,18 @@ header, main {
 }
 
 .globalContainerActivities-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 600px;
+    
 }
 
 .globalContainerActivities-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 23%;
     height: 550px;
 }
@@ -444,57 +434,38 @@ header, main {
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 
-.pictureVieuxPort {
-    background-image: url("img/activites/3_medium/vieux-port.jpg");
-    background-size: cover;
-    background-position: center;
+.pictureLargeActivities {
+    object-fit: cover;
     width: 100%;
     height: 480px;
     border-radius: 15px 15px 0 0;
 }
 
-.pictureFortDePomegues {
-    background-image: url("img/activites/3_medium/fort-de-pomegues.jpg");
-    background-size: cover;
-    background-position: center;
+.pictureMediumActivities {
+    object-fit: cover;
     width: 100%;
     height: 220px;
     border-radius: 15px 15px 0 0;
 }
 
-.pictureIleDuFrioul {
-    background-image: url("img/activites/4_small/ile-du-frioul.jpg");
-    background-size: cover;
-    background-position: center;
+.pictureMediumActivities-2 {
+    object-fit: cover;
+    width: 100%;
+    height: 190px;
+    border-radius: 15px 15px 0 0;
+}
+
+.pictureSmallActivities {
+    object-fit: cover;
     width: 100%;
     height: 140px;
     border-radius: 15px 15px 0 0;
 }
 
-.pictureParcNationalDesCalanques {
-    background-image: url("img/activites/3_medium/parc-national-des-calanques.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 480px;
-    border-radius: 15px 15px 0 0;
-}
-
-.pictureNotreDameDeLaGarde {
-    background-image: url("img/activites/4_small/notre-dame-de-la-garde.jpg");
-    background-size: cover;
-    background-position: center;
+.pictureSmallActivities-2 {
+    object-fit: cover;
     width: 100%;
     height: 170px;
-    border-radius: 15px 15px 0 0;
-}
-
-.pictureParcLongchamp {
-    background-image: url("img/activites/3_medium/parc-longchamp.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 190px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -505,6 +476,9 @@ header, main {
 .footer {
     height: 250px;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footerMarginsLeft {
@@ -513,4 +487,418 @@ header, main {
 
 .footerMarginRight {
     margin-right: 28%;
+}
+
+
+/*** IPHONE 8 ***/
+
+
+@media screen and (max-width: 767px) {
+
+
+    /*** RESPONSIVE : NAV ***/
+
+
+    body {
+        margin-top: 0px;
+    }
+    
+    header, main {
+        margin:0;
+        padding: 0;
+    }
+
+    #logo {
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    
+    .navHeight {
+        height: 150px;
+        width: 100%;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .linksContainer {
+        margin-top: -50px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #subscribeLink {
+        flex:1;
+        justify-content: flex-end;
+        padding-right: 20px;
+        border: none;
+    }
+
+    #accomodationLink {
+        border-bottom: 2px solid #0065FC;
+    }
+    #accomodationLink > .colorLink {
+        color: #0065FC;
+    }
+    
+    .link {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 50%;
+    }
+    
+    .borderNav {
+        border-bottom: 2px solid #dbdada;
+    }
+    
+    .borderNav:hover {
+        border-top: 5px solid transparent;
+        color: black;
+    }
+    
+    
+    /*** RESPONSIVE : SEARCH BAR ***/
+
+
+    .search {
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+        color: black;
+        font-weight: bold; 
+    }
+
+    .borderSearch {
+        width: 100%;
+        border-radius: 10px;
+        border: 0.5px solid #F2F2F2;
+    }
+
+    .iconSize {
+        height: 50px;
+        width: 50px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    /* .paddingSearch {
+        padding-left: 20px;
+    } */
+
+    .buttonSearch {
+        height: 50px;
+        width: 50px;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .buttonSearch:hover {
+        background-color: #0257d6;
+    }
+
+    #searchText {
+        display: none;
+    }
+
+    #searchLogo {
+        display: block;
+    }
+
+
+    /*** RESPONSIVE : FILTERS ***/
+
+
+    .marginFilter {
+        margin-top: 10px;
+        margin-bottom: 10px ;
+    }
+    
+    .filter {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .marginFilterTitle {
+        width: 100%;
+    }
+    
+    .filterCategories {
+        border: 2px solid #F2F2F2;
+        height: 50px;
+        border-radius: 30px;
+        margin: 7px;
+    }
+    
+    .filterIcons {
+        margin-left: -2px;
+        border-radius: 25px;
+        width: 52px;
+        height: 52px;
+        color: #0065FC;
+        background-color: #DEEBFF;
+    }
+    
+    .filterText {
+        height: 50px;
+        padding: 10px;
+        border-radius: 0 25px 25px 0;
+    }
+    
+    .filterCategories:hover > .filterIcons {
+        background-color: #5498fd;
+        color: rgb(255, 255, 255);
+    }
+    
+    .filterCategories:hover > .filterText {
+        color: #277cfc;
+    }
+    
+    .info {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1%;
+        margin-left: 5px;
+        width: 100%;
+    }
+    
+    .circle {
+        width: 30px;
+        height: 22px;
+        border: 2px solid #e0e0e0;
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+
+
+    /*** POPULAR ACCOMODATIONS ***/
+
+
+    .accomodations {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .marginTitleAccomodations {
+        margin-right: -20px;
+    }
+
+    .sizePopularAccomodationsArea {
+        height: 650px;
+        width: 100%;
+    }
+
+    /* .globalContainerPopularAccomodations {
+        padding-left: 10px;
+        padding-right: 10px;
+    } */
+
+    .popularAccomodationCard {
+        background-color: white;
+        height: 130px;
+        width: 320px;
+        padding: 1.5% 0 1.5% 1.5%;
+        border-radius: 20px;
+    }
+
+    .popularAccomodationCardMargin {
+        margin-bottom: 20px;
+    }
+
+    .descriptionPopularAccomodation {
+        height: 130px;
+        width: 60%;
+        padding-left: 5%;
+        padding-bottom: 5px;
+    }
+
+    .picturePopularAccomodations {
+        object-fit: cover;
+        width: 35%;
+        height: 130px;
+        border-radius: 15px 0 0 15px;
+    }
+
+
+    /*** RESPONSIVE : ACCOMODATIONS ***/
+
+
+    .backgroundAccomodations {
+        background-color: white;
+    }
+        
+    .sizeAccommodationsArea {
+        flex: 1;
+        height: 650px;
+        width: 350px;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    .containerPadding {
+        padding-left: 60px;
+        
+    }
+
+    .containerAccomodations-1 {
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    .containerAccomodations-2 {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .accomodationCard {
+        background-color: white;
+        width: 90%;
+        height: 90%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 5px #F2F2F2;
+    }
+
+    .descriptionAccomodation {
+        width: 100%;
+    }
+
+    .descriptionAccomodationsTitle {
+        margin-top: 10px;
+        margin-bottom: -15px;
+    }
+
+    .pictureAccomodations {
+        object-fit: cover;
+        width: 100%;
+        height: 120px;
+        border-radius: 15px 15px 0 0;
+    }
+
+
+    /*** RESPONSIVE ACTIVITIES ***/
+
+        
+    .activities {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 350px;
+        height: 1400px;
+        /* background-color: grey; */
+    }
+
+    .titlePosition {
+        height: 70px;
+    }
+
+    .activitiesTitle {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5%;
+        width: 95%;
+    }
+
+    .globalContainerActivities-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .globalContainerActivities-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 550px;
+    }
+
+    .containerActivities-1 {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #F2F2F2;
+        margin-bottom: 15px;
+    }
+
+    .containerActivities-2 {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #F2F2F2;
+        margin-bottom: 15px;
+    }
+
+    .pictureLargeActivities {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureMediumActivities {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureMediumActivities-2 {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureSmallActivities {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureSmallActivities-2 {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    
+    /*** RESPONSIVE FOOTER ***/
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 500px;
+        width: 400px;
+        margin-top: 0px;
+    }
+    
+    .footerMarginsLeft {
+        margin-left: 0%;
+    }
+    
+    .footerMarginRight {
+        margin-right: 0%;
+    }
 }
