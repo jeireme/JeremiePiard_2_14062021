@@ -151,7 +151,7 @@ header, main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 400px;
 }
 
 .link {
@@ -293,6 +293,12 @@ header, main {
     align-items: center;
 }
 
+.accomodationsFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .sizeAccommodationsArea {
     flex: 2;
     height: 650px;
@@ -423,12 +429,20 @@ header, main {
 }
 
 .containerActivities-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 23%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 
 .containerActivities-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
@@ -906,4 +920,355 @@ header, main {
     .footerMarginRight {
         margin-right: 0%;
     }
+}
+
+/*** TABLETTE ***/
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+
+    /*** RESPONSIVE : FILTERS ***/
+
+
+    .marginFilter {
+        margin-top: 10px;
+        margin-bottom: 10px ;
+    }
+    
+    .filter {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .marginFilterTitle {
+        width: 100%;
+        margin-left: 10px;
+    }
+    
+    .filterCategories {
+        border: 2px solid #F2F2F2;
+        height: 50px;
+        border-radius: 30px;
+        margin: 7px;
+    }
+    
+    .filterIcons {
+        margin-left: -2px;
+        border-radius: 25px;
+        width: 52px;
+        height: 52px;
+        color: #0065FC;
+        background-color: #DEEBFF;
+    }
+    
+    .filterText {
+        height: 50px;
+        padding: 10px;
+        border-radius: 0 25px 25px 0;
+    }
+    
+    .filterCategories:hover > .filterIcons {
+        background-color: #5498fd;
+        color: rgb(255, 255, 255);
+    }
+    
+    .filterCategories:hover > .filterText {
+        color: #277cfc;
+    }
+    
+    .info {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1%;
+        margin-left: 5px;
+        width: 100%;
+    }
+    
+    .circle {
+        width: 30px;
+        height: 22px;
+        border: 2px solid #e0e0e0;
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+
+
+    /*** POPULAR ACCOMODATIONS ***/
+
+    #popularHeader {
+        margin-left: 10px;
+    }
+
+    .accomodations {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items:center;
+        width: 80%;
+    }
+
+    .marginTitleAccomodations {
+        margin-right: -20px;
+    }
+
+    .sizePopularAccomodationsArea {
+        height: 650px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .globalContainerPopularAccomodations {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .popularAccomodationCard {
+        background-color: white;
+        height: 130px;
+        width: 100%;
+        padding: 1.5% 0 1.5% 1.5%;
+        border-radius: 20px;
+    }
+
+    .popularAccomodationCardMargin {
+        margin-bottom: 20px;
+    }
+
+    .descriptionPopularAccomodation {
+        height: 130px;
+        width: 60%;
+        padding-left: 5%;
+        padding-bottom: 5px;
+    }
+
+    .picturePopularAccomodations {
+        object-fit: cover;
+        width: 35%;
+        height: 130px;
+        border-radius: 15px 0 0 15px;
+    }
+
+
+    /*** RESPONSIVE : ACCOMODATIONS ***/
+
+
+    #accomodationsHeader {
+        margin-left: -15px;
+    }
+
+    #chartIcon {
+        margin-left: -60px;
+    }
+
+    .backgroundAccomodations {
+        background-color: white;
+    }
+
+    .accomodationsFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around
+    }
+        
+    .sizeAccommodationsArea {
+        height: 650px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .containerPadding {
+        padding-left: 90px;
+        
+    }
+
+    .containerAccomodations-1 {
+        flex: 1;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    .containerAccomodations-2 {
+        flex:1;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .accomodationCard {
+        background-color: white;
+        width: 350px;
+        height: 90%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 5px #F2F2F2;
+    }
+
+    .descriptionAccomodation {
+        width: 100%;
+    }
+
+    .descriptionAccomodationsTitle {
+        margin-top: 10px;
+        margin-bottom: -15px;
+    }
+
+    .pictureAccomodations {
+        object-fit: cover;
+        width: 100%;
+        height: 120px;
+        border-radius: 15px 15px 0 0;
+    }
+
+
+    /*** RESPONSIVE ACTIVITIES ***/
+
+        
+    .activities {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* background-color: grey; */
+    }
+
+    .globalContainerActivities-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 700px;
+        /* background-color: yellow; */
+    }
+
+    #activity1 {
+        order:1;
+    }
+    #activity2 {
+        order:2;
+    }
+    #activity3 {
+        order:3;
+    }
+    #activity4 {
+        order:4;
+        
+    }
+
+    #activityHeader {
+        margin: 30px;
+    }
+
+    .titlePosition {
+        height: 70px;
+    }
+
+    .activitiesTitle {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 5%;
+        width: 95%;
+        /* background-color: blue; */
+    }
+
+    /***! Vieux Port et Calanques !***/ 
+    .containerActivities-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 350px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #F2F2F2;
+        /* background-color:pink; */
+    }
+
+    .globalContainerActivities-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 200px;
+        /* background-color: red; */
+    }
+
+    .containerActivities-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 350px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #F2F2F2;
+        /* background-color:green; */
+    }
+
+    .pictureLargeActivities {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureMediumActivities {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureMediumActivities-2 {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureSmallActivities {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .pictureSmallActivities-2 {
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    /*** RESPONSIVE : FOOTER ***/
+
+    .footer {
+        height: 250px;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footerMarginsLeft {
+        margin-left: 30px;
+    }
+    
+    .footerMarginRight {
+        margin-right: 60px;
+    }
+
 }
