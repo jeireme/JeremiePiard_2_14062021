@@ -362,6 +362,12 @@ header, main {
 /*** POPULAR ACCOMODATIONS ***/
 
 
+.popularFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .sizePopularAccomodationsArea {
     flex: 1;
     height: 650px;
@@ -794,7 +800,7 @@ header, main {
     }
 
     .descriptionAccomodation {
-        width: 100%;
+        width: 95%;
     }
 
     .descriptionAccomodationsTitle {
@@ -927,11 +933,28 @@ header, main {
 
 /*** RESPONSIVE FOR TABLET ***/
 
+
 @media screen and (min-width: 767px) and (max-width: 991px) {
 
 
     /*** TABLET : FILTERS ***/
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+    
+    #searchAndFilters {
+        padding: 20px;
+    }
+
+    #logo {
+        padding-top: 20px;
+    }
 
     .marginFilter {
         margin-top: 10px;
@@ -1000,39 +1023,41 @@ header, main {
     /*** TABLET : POPULAR ACCOMODATIONS ***/
 
     #popularHeader {
+        margin-top: 0px;
         margin-left: 10px;
+    }
+
+    .popularFlex {
+        padding-left: 10px;
     }
 
     .accomodations {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items:center;
-        width: 80%;
+        justify-content: center;
     }
 
     .marginTitleAccomodations {
-        margin-right: -20px;
+        margin-right: 0px;
     }
 
     .sizePopularAccomodationsArea {
         height: 650px;
-        width: 100%;
-        margin-left: 20px;
+        margin: 0px;
+        border-radius: 0px;
     }
 
     .globalContainerPopularAccomodations {
         display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .popularAccomodationCard {
         background-color: white;
         height: 130px;
-        width: 100%;
-        padding: 1.5% 0 1.5% 1.5%;
+        width: 96%;
+        padding-left: 10px;
         border-radius: 20px;
+        /* background-color: lightcoral; */
     }
 
     .popularAccomodationCardMargin {
@@ -1058,11 +1083,16 @@ header, main {
 
 
     #accomodationsHeader {
-        margin-left: -15px;
+        margin-left: 10px;
     }
 
     #chartIcon {
-        margin-left: -60px;
+        margin-right: 30px;
+    }
+
+    #showMoreBtn {
+        padding-left: 20px;
+        margin-top: 30px;
     }
 
     .backgroundAccomodations {
@@ -1072,20 +1102,12 @@ header, main {
     .accomodationsFlex {
         display: flex;
         flex-direction: row;
-        justify-content: space-around
+        justify-content: space-between;
     }
         
     .sizeAccommodationsArea {
         height: 650px;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        border-radius: 0px;
-    }
-
-    .containerPadding {
-        padding-left: 90px;
-        
+        margin: 0;
     }
 
     .containerAccomodations-1 {
@@ -1094,7 +1116,7 @@ header, main {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+        align-items: center;
     }
 
     .containerAccomodations-2 {
@@ -1103,20 +1125,21 @@ header, main {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
     }
 
     .accomodationCard {
         background-color: white;
-        width: 350px;
-        height: 90%;
-        padding: 5px;
+        width: 90%;
+        padding: 0px;
         margin: 10px;
         border-radius: 20px;
         box-shadow: 5px 5px 5px 5px #F2F2F2;
     }
 
     .descriptionAccomodation {
-        width: 100%;
+        width: 90%;
+        height: 110px;
     }
 
     .descriptionAccomodationsTitle {
@@ -1136,18 +1159,19 @@ header, main {
 
         
     .activities {
-        margin-top: 50px;
+        margin-top: -20px;
         margin-bottom: 50px;
+        /* padding: 0 20px; */
+        margin: 0 60px;
         /* background-color: grey; */
     }
 
     .globalContainerActivities-1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
-        width: 800px;
         height: 700px;
         /* background-color: yellow; */
     }
@@ -1167,7 +1191,8 @@ header, main {
     }
 
     #activityHeader {
-        margin: 30px;
+        margin-top: -15px;
+        margin-bottom: 15px; /** ça va venir */
     }
 
     .titlePosition {
@@ -1179,18 +1204,15 @@ header, main {
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding-left: 5%;
-        width: 95%;
         /* background-color: blue; */
     }
 
-    /***! Debug: Container of Vieux Port and Calanques ***/ 
     .containerActivities-1 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
-        width: 350px;
+        width: 47%;
         height: 200px;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #F2F2F2;
@@ -1200,8 +1222,9 @@ header, main {
     .globalContainerActivities-2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
         width: 100%;
         height: 200px;
         /* background-color: red; */
@@ -1210,9 +1233,10 @@ header, main {
     .containerActivities-2 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
-        width: 350px;
+        flex-wrap: nowrap;
+        width: 47%;
         height: 200px;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #F2F2F2;
@@ -1257,9 +1281,9 @@ header, main {
     /*** TABLET : FOOTER ***/
 
     .footer {
-        height: 250px;
+        height: 220px;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -1270,7 +1294,7 @@ header, main {
     }
     
     .footerMarginRight {
-        margin-right: 60px;
+        margin-right: 30px;
     }
 
 }
