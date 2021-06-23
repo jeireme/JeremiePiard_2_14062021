@@ -196,6 +196,9 @@ header, main {
     width: 400px;
     border-radius: 10px;
     border: 0.5px solid #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .iconSize {
@@ -509,22 +512,20 @@ header, main {
 }
 
 
-/*** IPHONE ***/
+/*** RESPONSIVE FOR IPHONE ***/
 
-
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
 
 
     /*** IPHONE : NAV ***/
 
-
     body {
-        margin-top: 0px;
+        margin: 0;
+        padding: 0;
     }
     
-    header, main {
-        margin:0;
-        padding: 0;
+    #searchAndFilters {
+        padding: 10px;
     }
 
     #logo {
@@ -596,9 +597,10 @@ header, main {
     }
 
     .borderSearch {
-        width: 100%;
         border-radius: 10px;
         border: 0.5px solid #F2F2F2;
+        display: flex;
+        justify-content: space-between;
     }
 
     .iconSize {
@@ -607,9 +609,9 @@ header, main {
         border-radius: 10px 0 0 10px;
     }
 
-    /* .paddingSearch {
-        padding-left: 20px;
-    } */
+    .paddingSearch {
+        padding-left: 50px;
+    }
 
     .buttonSearch {
         height: 50px;
@@ -685,8 +687,7 @@ header, main {
         display: flex;
         align-items: center;
         padding-bottom: 1%;
-        margin-left: 5px;
-        width: 100%;
+        padding-left: 5px;
     }
     
     .circle {
@@ -704,28 +705,22 @@ header, main {
     .accomodations {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
-        width: 300px;
+        justify-content: center;
     }
 
     .marginTitleAccomodations {
-        margin-right: -20px;
+        margin-right: 0px;
     }
 
     .sizePopularAccomodationsArea {
         height: 650px;
-        width: 100%;
+        border-radius: 0px;
     }
-
-    /* .globalContainerPopularAccomodations {
-        padding-left: 10px;
-        padding-right: 10px;
-    } */
 
     .popularAccomodationCard {
         background-color: white;
         height: 130px;
-        width: 320px;
+        width: 100%;
         padding: 1.5% 0 1.5% 1.5%;
         border-radius: 20px;
     }
@@ -748,6 +743,11 @@ header, main {
         border-radius: 15px 0 0 15px;
     }
 
+    .containerPadding {
+        padding: O;
+        margin: 0;
+    }
+
 
     /*** IPHONE : ACCOMODATIONS ***/
 
@@ -758,16 +758,16 @@ header, main {
         
     .sizeAccommodationsArea {
         flex: 1;
-        height: 650px;
-        width: 350px;
-        margin: 0px;
+        justify-content: center;
+        margin-top: 10px;
+        /* height: 50px; */
+        /* margin: 0px;
         padding: 0px;
-        border-radius: 0px;
+        border-radius: 0px; */
     }
 
-    .containerPadding {
-        padding-left: 60px;
-        
+    #accomodationsHeader {
+        margin-bottom: 10px;
     }
 
     .containerAccomodations-1 {
@@ -775,7 +775,7 @@ header, main {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+        align-items: center;
     }
 
     .containerAccomodations-2 {
@@ -783,11 +783,12 @@ header, main {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
     }
 
     .accomodationCard {
         background-color: white;
-        width: 90%;
+        width: 100%;
         height: 90%;
         padding: 5px;
         margin: 10px;
@@ -816,11 +817,11 @@ header, main {
 
         
     .activities {
-        margin-top: 50px;
+        margin-top: -20px;
         margin-bottom: 50px;
         height: 1400px;
-        width: 330px;
-        margin-left: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
         /* background-color: grey; */
     }
 
@@ -858,14 +859,14 @@ header, main {
         width: 100%;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #F2F2F2;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .containerActivities-2 {
         width: 100%;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #F2F2F2;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .pictureLargeActivities {
@@ -912,10 +913,10 @@ header, main {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 500px;
-        width: 100%;
+        height: 520px;
         margin-top: 0px;
-        padding-left: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
     }
     
     .footerMarginsLeft {
@@ -928,10 +929,9 @@ header, main {
 }
 
 
-/*** TABLET ***/
+/*** RESPONSIVE FOR TABLET ***/
 
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
 
 
     /*** TABLET : FILTERS ***/
