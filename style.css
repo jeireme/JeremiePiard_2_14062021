@@ -16,6 +16,11 @@ header, main {
     margin:auto;
 }
 
+#logo {
+    width: 120px; 
+    height: 50px;
+}
+
 .lineHeightCards {
     line-height: 7px;
 }
@@ -504,13 +509,13 @@ header, main {
 }
 
 
-/*** IPHONE 8 ***/
+/*** IPHONE ***/
 
 
 @media screen and (max-width: 767px) {
 
 
-    /*** RESPONSIVE : NAV ***/
+    /*** IPHONE : NAV ***/
 
 
     body {
@@ -579,7 +584,7 @@ header, main {
     }
     
     
-    /*** RESPONSIVE : SEARCH BAR ***/
+    /*** IPHONE : SEARCH BAR ***/
 
 
     .search {
@@ -627,7 +632,7 @@ header, main {
     }
 
 
-    /*** RESPONSIVE : FILTERS ***/
+    /*** IPHONE : FILTERS ***/
 
 
     .marginFilter {
@@ -693,7 +698,7 @@ header, main {
     }
 
 
-    /*** POPULAR ACCOMODATIONS ***/
+    /*** IPHONE : POPULAR ACCOMODATIONS ***/
 
 
     .accomodations {
@@ -744,7 +749,7 @@ header, main {
     }
 
 
-    /*** RESPONSIVE : ACCOMODATIONS ***/
+    /*** IPHONE : ACCOMODATIONS ***/
 
 
     .backgroundAccomodations {
@@ -807,7 +812,7 @@ header, main {
     }
 
 
-    /*** RESPONSIVE ACTIVITIES ***/
+    /*** IPHONE : ACTIVITIES ***/
 
         
     .activities {
@@ -835,7 +840,7 @@ header, main {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: space-between;
+        align-items:center;
         width: 100%;
         height: 600px;
     }
@@ -844,7 +849,7 @@ header, main {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: space-between;
+        align-items: center;
         width: 100%;
         height: 550px;
     }
@@ -899,7 +904,7 @@ header, main {
     }
 
     
-    /*** RESPONSIVE FOOTER ***/
+    /*** IPHONE : FOOTER ***/
 
 
     .footer {
@@ -922,13 +927,14 @@ header, main {
     }
 }
 
-/*** TABLETTE ***/
+
+/*** TABLET ***/
 
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
 
 
-    /*** RESPONSIVE : FILTERS ***/
+    /*** TABLET : FILTERS ***/
 
 
     .marginFilter {
@@ -995,7 +1001,7 @@ header, main {
     }
 
 
-    /*** POPULAR ACCOMODATIONS ***/
+    /*** TABLET : POPULAR ACCOMODATIONS ***/
 
     #popularHeader {
         margin-left: 10px;
@@ -1052,7 +1058,7 @@ header, main {
     }
 
 
-    /*** RESPONSIVE : ACCOMODATIONS ***/
+    /*** TABLET : ACCOMODATIONS ***/
 
 
     #accomodationsHeader {
@@ -1130,7 +1136,7 @@ header, main {
     }
 
 
-    /*** RESPONSIVE ACTIVITIES ***/
+    /*** TABLET : ACTIVITIES ***/
 
         
     .activities {
@@ -1182,7 +1188,7 @@ header, main {
         /* background-color: blue; */
     }
 
-    /***! Vieux Port et Calanques !***/ 
+    /***! Debug: Container of Vieux Port and Calanques ***/ 
     .containerActivities-1 {
         display: flex;
         flex-direction: column;
@@ -1252,7 +1258,7 @@ header, main {
         border-radius: 15px 15px 0 0;
     }
 
-    /*** RESPONSIVE : FOOTER ***/
+    /*** TABLET : FOOTER ***/
 
     .footer {
         height: 250px;
