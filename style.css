@@ -227,6 +227,7 @@ header, main {
     background-color: #0257d6;
 }
 
+
 /*** FILTERS ***/
 
 
@@ -337,12 +338,13 @@ header, main {
 .accomodationCard {
     background-color: white;
     width: 30%;
-    height: auto;
     padding: 1%;
     border-radius: 20px;
 }
 
 .descriptionAccomodation {
+    display: flex;
+    flex-direction: column;
     width: 90%;
 }
 
@@ -505,22 +507,26 @@ header, main {
     height: 250px;
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
+footer > div {
+    margin: 0 100px;
+}
+
 .footerMarginsLeft {
-    margin-left: 8%;
+    margin-left: 70px;
 }
 
 .footerMarginRight {
-    margin-right: 28%;
+    margin-right: 200px;
 }
 
 
 /*** RESPONSIVE FOR IPHONE ***/
 
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
 
     /*** IPHONE : NAV ***/
@@ -568,6 +574,7 @@ header, main {
     #accomodationLink {
         border-bottom: 2px solid #0065FC;
     }
+
     #accomodationLink > .colorLink {
         color: #0065FC;
     }
@@ -824,7 +831,6 @@ header, main {
         margin-bottom: 50px;
         height: 1400px;
         padding: 0 20px;
-        /* background-color: grey; */
     }
 
     .titlePosition {
@@ -920,6 +926,9 @@ header, main {
         padding-top: 10px;
         padding-left: 30px;
     }
+    footer > div {
+        margin: inherit;
+    }
     
     .footerMarginsLeft {
         margin-left: 0%;
@@ -928,13 +937,13 @@ header, main {
     .footerMarginRight {
         margin-right: 0%;
     }
+
 }
 
 
 /*** RESPONSIVE FOR TABLET ***/
 
-
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
 
 
     /*** TABLET : FILTERS ***/
@@ -1022,11 +1031,22 @@ header, main {
 
     /*** TABLET : POPULAR ACCOMODATIONS ***/
 
+
     #popularHeader {
         margin-top: 0px;
         margin-left: 10px;
     }
 
+    .backgroundGreyFullWidth {
+        background-color: #f2f2f2;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 650px;
+        left: 0; 
+        right: 0;
+    }
+    
     .popularFlex {
         padding-left: 10px;
     }
@@ -1057,7 +1077,6 @@ header, main {
         width: 96%;
         padding-left: 10px;
         border-radius: 20px;
-        /* background-color: lightcoral; */
     }
 
     .popularAccomodationCardMargin {
@@ -1161,9 +1180,7 @@ header, main {
     .activities {
         margin-top: -20px;
         margin-bottom: 50px;
-        /* padding: 0 20px; */
         margin: 0 60px;
-        /* background-color: grey; */
     }
 
     .globalContainerActivities-1 {
@@ -1173,18 +1190,20 @@ header, main {
         align-items: center;
         flex-wrap: wrap;
         height: 700px;
-        /* background-color: yellow; */
     }
 
     #activity1 {
         order:1;
     }
+
     #activity2 {
         order:2;
     }
+
     #activity3 {
         order:3;
     }
+
     #activity4 {
         order:4;
         
@@ -1192,7 +1211,7 @@ header, main {
 
     #activityHeader {
         margin-top: -15px;
-        margin-bottom: 15px; /** ça va venir */
+        margin-bottom: 15px;
     }
 
     .titlePosition {
@@ -1204,7 +1223,6 @@ header, main {
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
-        /* background-color: blue; */
     }
 
     .containerActivities-1 {
@@ -1216,7 +1234,6 @@ header, main {
         height: 200px;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #F2F2F2;
-        /* background-color:pink; */
     }
 
     .globalContainerActivities-2 {
@@ -1227,7 +1244,6 @@ header, main {
         flex-wrap: nowrap;
         width: 100%;
         height: 200px;
-        /* background-color: red; */
     }
 
     .containerActivities-2 {
@@ -1240,7 +1256,6 @@ header, main {
         height: 200px;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #F2F2F2;
-        /* background-color:green; */
     }
 
     .pictureLargeActivities {
@@ -1278,23 +1293,40 @@ header, main {
         border-radius: 15px 15px 0 0;
     }
 
+
     /*** TABLET : FOOTER ***/
 
+    
     .footer {
         height: 220px;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 0px;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer > div {
+        margin: inherit;
     }
     
     .footerMarginsLeft {
-        margin-left: 30px;
+        margin-left: 0px;
     }
     
     .footerMarginRight {
         margin-right: 30px;
+    }
+
+}
+
+
+/*** DEBUG ***/
+
+@media screen and (min-width: 1366px) and (max-width: 1522px) {
+
+    .fixTitle {
+        font-size: 1.35vw;
     }
 
 }
