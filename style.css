@@ -173,7 +173,6 @@ header, main {
 
 .borderNav:hover {
     border-top: 5px solid #0065FC;
-    cursor: pointer;
 }
 
 .borderNav:hover > .colorLink {
