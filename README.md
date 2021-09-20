@@ -1,7 +1,7 @@
 # Reservia
-- Voici le deuxième projet du parcours Développeur Front-End d'OpenClassrooms.
-- L'exercice était d'intégrer les maquettes desktop et mobile d'une entreprise fictive : Reservia.
-- Pour visiter le site internet, suivez ce [lien](https://jeireme.github.io/JeremiePiard_2_14062021/).
+- Voici le deuxième projet du parcours Développeur Front-End d'OpenClassrooms
+- L'objectif était d'intégrer les maquettes desktop et mobile d'une entreprise fictive : Reservia
+- Pour visiter le site internet, suivez ce [lien](https://jeireme.github.io/JeremiePiard_2_14062021/)
 
 ![maquette web reservia](https://puu.sh/IcFku/c78f3e43eb.jpg)
 
