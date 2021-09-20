@@ -9,7 +9,7 @@
 - Maquettes desktop et mobile
 - Photos aux différents formats : sm, md, l & xl
 - Couleurs principales : Bleu #0065FC, Bleu clair #DEEBFF et Gris #F2F2F2
-- Police utilisée : ["Raleway"](https://fonts.google.com/specimen/Raleway)
+- Police utilisée : [Raleway](https://fonts.google.com/specimen/Raleway)
 - Les icônes proviennent du site [Font Awesome](https://fontawesome.com/)
 
 ## Contraintes techniques
