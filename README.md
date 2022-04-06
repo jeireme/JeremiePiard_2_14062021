@@ -3,7 +3,7 @@
 - L'objectif était d'intégrer les maquettes desktop et mobile d'une entreprise fictive : Reservia
 - Pour visiter le site internet, suivez ce [lien](https://jeireme.github.io/JeremiePiard_2_14062021/)
 
-![maquette web reservia](https://puu.sh/IcFku/c78f3e43eb.jpg)
+![maquette web reservia](https://i.ibb.co/2qtKpjx/preview.jpg)
 
 ## Éléments fournis par l'entreprise
 - Maquettes desktop et mobile
